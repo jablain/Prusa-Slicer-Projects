@@ -1,0 +1,49 @@
+1- Make a TimeShift snapshot
+2- Download .appimage
+3- Rename it to PrusaSlicer
+4- Start it
+
+If there are problems
+
+
+
+===== Creating a dockable .appimage app ====
+
+With the Appimage format, you directly run the application by running the appimage file, without installing it into your system. Because there is no installation, the application typically will not install a launcher in your application menu.
+
+If you want the application to appear in the menu, you will need to create a desktop file for it yourself. A .desktop file is a small text file that provides information to your operating system on how to start an application and display it in the menu. If you place your valid .desktop file in .local/share/applications, your menu system automatically will pick it up so you can launch it from there.
+
+Once your custom application appears in your menu, you can also pin it in the normal way.
+
+Example
+
+For example, this is a file ~/.local/share/applications/com.github.qarmin.czkawka.desktop installed to run the AppImage of the Czkawka, a utility to find duplicate files.
+
+[Desktop Entry]
+Name=Czkawa Duplicate File Finder
+Exec=/home/ftack/.appimage/linux_czkawka_gui.AppImage
+Type=Application
+Icon=com.github.qarmin.czkawka
+Categories=Utility;
+
+The icon file is ~/.local/share/icons/com.github.qarmin.czkawka.svg. It is sufficient to only provide the file base name if the icon is installed in a proper location, here ~/.local/share/icons/.
+
+Actually, the AppImage usually provides a .desktop file and icons, which you can copy to the appropriate location and adapt. To find these files, run the AppImage. An AppImage file actually contains a file system that will be mounted in a temporary folder when you run the application. Learn where this folder is from the output of the command mount. From the line
+
+/home/vanadium/.appimage/linux_czkawka_gui.AppImage on /tmp/.mount_linux_e898NI type fuse.linux_czkawka_gui.AppImage (ro,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+
+I learn that, this time, my AppImage is mounted on /tmp/.mount_linux_e898NI. Navigate there with your file manager to look for a .desktop and an icon file to use.
+
+If after pinning your launcher you see that a second icon is created after clicking the laucher, then you will also need to add a StartupWMClass= line to the .desktopfile, so the launcher can be connected to the correct icon.
+
+==== Starting PrusaSlicer with correct local settings ====
+
+You cant set the location from the software Towlerg.  You can start it with command line switches to define where it is though.  The easiest is something like the following in a batch file
+
+prusa-slicer-console.exe --datadir settings
+
+This would start prusa-slicer-console.exe and tell it to use a folder called settings in the local folder.  If 'settings' didnt exist then it will create one.  It would be like running it for the first time so it would go through the wizard.  Once done though you can use the config bundle export and then import to get all your custom settings into the new location.  Or you could copy the contents of the default 2.3 folder into settings and then start the software.  
+
+Its how I run multiple instances as each folder with a different version has its own settings folder.  As long as you remember to start with the batch file each time it will use Settings.  
+
+

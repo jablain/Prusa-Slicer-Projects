@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=PrusaSlicer
+Exec=~/3D Printing/Slicers/Prusa/PrusaSlicer.Appimage --datadir ~/3D Printing/Slicers/Prusa/Projects/Settings
+Icon=PrusaSlicer
+Terminal=false
+Type=Application
+MimeType=model/stl;application/vnd.ms-3mfdocument;application/prs.wavefront-obj;application/x-amf;
+Categories=Graphics;3DGraphics;
+Keywords=3D;Printing;Slicer;
+X-AppImage-Version=2.6.0+linux.x64.GTK3.glibc2.17
