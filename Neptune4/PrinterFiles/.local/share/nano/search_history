@@ -1,0 +1,11 @@
+min_extrude_temp
+ki
+control=
+kd
+resonance
+include
+adxl
+shaper
+
+
+
