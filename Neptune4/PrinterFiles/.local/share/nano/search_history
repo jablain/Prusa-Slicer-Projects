@@ -6,6 +6,10 @@ resonance
 include
 adxl
 shaper
+zoffset
+g28
+zoffet
+z_offset
 
 
 
