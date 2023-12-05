@@ -1,0 +1,61 @@
+How to calibrate Slicer Flow and max volumetric extrusion :
+
+1- Start with SlicerFlow0.6mm.3mf
+2- Set Filament advanced volumetric flow to something
+3- Print the cube
+4- Measure cube side thickness (should be 0.95 mm)
+5- If yes increase Filament advanced volumetric flow and repeat test
+
+This will give you for a given filament the max volumetric flow
+
+For a different nozzle size of design 
+
+1- Create a different project named SlicerFlow0.Xmm.3mf
+2- Set default extrusion width to 1.58 time nozzle diameter (ie 0.63 for 0.4 mm nozzle)
+3- Determine max filament volumetric flow as described above
+
+---------------------------------------------------
+Elegoo Black PLA+ 0.6 mm Nozzle Calibration results
+---------------------------------------------------
+
+--- 215'C ------------
+
+volumetric speed   Wall Thickness      Correction
+10 mm3/s           0.0365" or 0.927    1.0247  
+15 mm3/s           0.0335" or 0.851    1.1165
+
+--- 225'C ------------
+
+volumetric speed   Wall Thickness      Correction
+10 mm3/s           
+15 mm3/s           0.0345" or 0.876    1.108
+
+--- 235'C ------------
+
+volumetric speed   Wall Thickness      Correction
+5  mm3/should      0.0375" or 0.95     1.0 
+10 mm3/s           0.037 or 0.94       1.01                                 
+15 mm3/s           0.0355" or 0.902    1.054       
+20 mm3/s           0.034 or  0.86      1.1
+
+*** CONCLUSION ABOUT ELEGOO PLA+ ***
+
+Print at 235'C lay down first layer at 220'C
+Use PrusaSlicer auto mode and print at 10 mm3/s for quality and (maybe ??)
+Higher for speed print
+
+---------------------------------------------------
+Elegoo Black PLA 0.6 mm Nozzle Calibration results
+---------------------------------------------------
+
+--- 205'C ------------
+
+volumetric speed   Wall Thickness      Correction
+10 mm3/s           0.0365" or 0.927    1.0247  
+
+--- 215'C ------------
+
+volumetric speed   Wall Thickness      Correction
+10 mm3/s           0.0375" or 0.95     1.0  
+15 mm3/s           0.0350" or 0.89     1.07  
+

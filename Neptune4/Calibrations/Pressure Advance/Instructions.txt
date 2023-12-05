@@ -1,0 +1,12 @@
+How to calibrate Pressure Advance :
+
+1 - Select the Filament you want to use for the nozzle size
+2 - Select the printer and nozzle size to use
+
+Emit G Code and follow https://www.klipper3d.org/Pressure_Advance.html
+for printing procedure details
+
+Once the optimal pressure advance is determined based on the cube, set it in the Filament
+custom G-Code section and save filament preset.
+
+Warning : DO NOT RESAVE THE PROJECT
