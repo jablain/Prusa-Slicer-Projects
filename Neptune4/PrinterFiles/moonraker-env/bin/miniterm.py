@@ -1,4 +1,4 @@
-#!/home/mks/moonraker-env/bin/python3
+#!/home/mks/moonraker-env/bin/python
 #
 # Very simple serial terminal
 #
