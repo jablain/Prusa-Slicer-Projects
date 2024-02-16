@@ -1,5 +1,0 @@
-With generix black ASA at 100'C bed temp
-
-A probe z_offset of 0.95 mm seems to works well
-At 0.90 mm sometimes does not stick.
-Anything above 1.05 desintegrates on first layer

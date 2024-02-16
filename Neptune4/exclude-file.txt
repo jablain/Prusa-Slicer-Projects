@@ -1,1 +1,3 @@
 .cache/*
+printer_data/gcodes/*
+printer_data/logs/*
