@@ -29,3 +29,6 @@ cd n4pro
 ls
 nano n4pro-1.2-printer.cfg 
 exit
+ls -al
+cd printer_data/
+ls -al
