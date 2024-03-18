@@ -1,0 +1,11 @@
+Bed leveling instructions
+
+For fast work use 1/8 bed pattern
+For max precision use full bed
+
+1 - Load Project (1/8 or full)
+2 - If needed (because of nozzle size) change first layer thickness = About 60% of Nozzle diameter
+3 - Pick a filament and if needed change max volumetric speed
+4 - Pick correct printer settings (vs nozzle size)
+
+Let her rip, Klipper edit Zoffset in printer.cfg if needed and repeat

@@ -1,12 +1,26 @@
 How to calibrate Pressure Advance :
 
-1 - Select the Filament you want to use for the nozzle size
-2 - Select the printer and nozzle size to use
+1 - Open Pressure advance calibration project
+2 - Select the correct settings for pressure advance calibration vs nozzle size
+      Rules for new setting
+        Layer height    = 75% of nozzle diameter
+4 - Select Filament settings to use
+5 - Check that in Filament setting custom g code, the pressure advance is not set (comment out if it is)
+6 - Send to printer and print
 
-Emit G Code and follow https://www.klipper3d.org/Pressure_Advance.html
-for printing procedure details
+https://www.klipper3d.org/Pressure_Advance.html for detailed explanation
 
-Once the optimal pressure advance is determined based on the cube, set it in the Filament
+Once the optimal pressure advance is determined based on the cube, set it in the Filament settings
 custom G-Code section and save filament preset.
 
-Warning : DO NOT RESAVE THE PROJECT
+If you want to test your setting
+
+1 - Load project Pressure advance check
+2 - Load a filament
+3 - Load the correct printer setting for your nozzle
+4 - Set Filament Max Flow rate
+5 - Let her rip
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! WARNING : DO NOT RESAVE ANY OF THESE TWO PROJECTS !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
