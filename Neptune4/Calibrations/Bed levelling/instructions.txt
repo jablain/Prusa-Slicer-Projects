@@ -8,4 +8,8 @@ For max precision use full bed
 3 - Pick a filament and if needed change max volumetric speed
 4 - Pick correct printer settings (vs nozzle size)
 
-Let her rip, Klipper edit Zoffset in printer.cfg if needed and repeat
+Let her rip
+
+If needed, edit z_offset in Klipper printer.cfg (as per comments) and repeat
+
+
