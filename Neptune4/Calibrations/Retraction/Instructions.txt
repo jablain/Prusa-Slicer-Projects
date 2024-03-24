@@ -1,7 +1,12 @@
++=========================================+
+| WHEN USING MAX FLOW CONTROLLED PRINTING |
+| STRINGING SHOULD NOT BE A REAL ISSUE    |
++=========================================+
+
 How to calibrate Retraction :
 
-1- Start with Start with Retraction.3mf
-2- Select Filament and nozzle size preset
+1- Start with Retraction.3mf
+2- Select Filament and print settings
 3- Set filament max volumetric flow to half the preset value (at the real max value there should never be any stringing)
 4- Print the retraction tower
 5- Modify retract length, speed and Z Hop to get minimal stringing
